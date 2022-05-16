@@ -33,13 +33,14 @@ export default defineConfig({
                 time_format: false,
                 label: 'Publish Date',
               },
-              { name: 'author', widget: 'string', label: 'Author Name' },
-              { name: 'authorURL', widget: 'string', label: 'Author URL' },
-              { name: 'description', widget: 'string', label: 'Description' },
+              { name: 'author', widget: 'string', label: 'Author Name', required: false },
+              { name: 'authorURL', widget: 'string', label: 'Author URL', required: false },
+              { name: 'description', widget: 'string', label: 'Description', required: false },
               { name: 'body', widget: 'markdown', label: 'Post Body' },
               {
                 name: 'layout',
                 widget: 'select',
+                default: '../../layouts/BlogPost.astro',
                 options: [
                   { label: 'Blog Post', value: '../../layouts/BlogPost.astro' },
                 ],
