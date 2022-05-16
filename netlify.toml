@@ -1,0 +1,13 @@
+# Configure Netlify builds.
+[build.environment]
+  NPM_FLAGS = "--version" # prevent Netlify npm install
+
+[build]
+  publish = "dist/"
+    command = "npx pnpm i --store=node_modules/.pnpm-store && npm run build"
+
+# Request bots not to index the admin section.
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
