@@ -10,9 +10,9 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "1.1.5"
+    "astro": "1.5.2"
   },
   "dependencies": {
-    "astro-netlify-cms": "^0.2.0"
+    "astro-netlify-cms": "^0.2.4"
   }
 }
