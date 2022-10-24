@@ -20,15 +20,20 @@ Once you’ve got the project set up, you do need to
 
 All commands are run from the root of the project, from a terminal:
 
-| Command           | Action                                             |
-| :---------------- | :------------------------------------------------- |
-| `npm install`     | Installs dependencies                              |
-| `npm run dev`     | Starts local dev & Netlify CMS proxy servers       |
-| `npm run build`   | Build your production site to `./dist/`            |
-| `npm run preview` | Serve `./dist/` & run the Netlify CMS proxy server |
+| Command            | Action                                             |
+| :----------------- | :------------------------------------------------- |
+| `pnpm install`     | Installs dependencies                              |
+| `pnpm run dev`     | Starts local dev & Netlify CMS proxy servers       |
+| `pnpm run build`   | Build your production site to `./dist/`            |
+| `pnpm run preview` | Serve `./dist/` & run the Netlify CMS proxy server |
+
+> **Note**
+> These commands are using [`pnpm`][pnpm], a fast and efficient package manager.
+> You can choose to use `npm` or `yarn` instead if you prefer, but remember to update the config in [`netlify.toml`](netlify.toml) to match.
 
 [starter]: https://astro.new/blog?on=github
 [integration]: https://github.com/delucis/astro-netlify-cms
 [deploy]: https://app.netlify.com/start/deploy?repository=https://github.com/delucis/astro-netlify-cms-starter
 [identity]: https://docs.netlify.com/visitor-access/identity/
 [gateway]: https://docs.netlify.com/visitor-access/git-gateway/
+[pnpm]: https://pnpm.io/
